@@ -1,0 +1,218 @@
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+h1 {
+	line-height: 1.2;
+}
+
+/* Full height image header */
+
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    position: relative;
+    width: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.sig-fam {
+	font-family: 'Sigmar One', cursive;
+}
+
+.white-font {
+	color: #ffffff;
+}
+
+.title {
+	font-size: 7rem;
+    margin-bottom: .1rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 3rem;
+        font-family: "Oswald", sans-serif;
+    }
+}
+
+.title-sm {
+	font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .title-sm {
+        font-size: 1rem;
+        font-family: "Oswald", sans-serif;
+    }
+}
+
+.roboto-fam {
+	font-family: "Roboto", sans-serif;
+}
+
+.font-bolder {
+	font-size: 1.7rem;
+	font-weight: bolder;
+}
+
+.footer-color {
+	background-color: #4e4e4e;
+
+}
+
+.social_icon:hover {
+	transform: scale(1.1);
+}
+
+.marg {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.decor {
+	text-decoration: none;
+}
+
+.more-button {
+	background-color: #e3ad31;
+  border-color: #e3ad31;
+	opacity: 1;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-align: center;
+}
+
+.more-button:hover {
+	background-color: #e3ad31;
+	opacity: 0.6;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.4), 0 6px 30px 5px rgba(0,0,0,0.2), 0 8px 10px -5px rgba(0,0,0,0.3);
+}
+
+.opac {
+	opacity: 0.6;
+}
+
+.w3-left-align {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+
+/*form*/
+
+#register {
+  background: #4e4e4e;
+  position: relative;
+  width: 410px;
+  padding: 2px 15px 20px 15px;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+  transition: transform .1s ease-in-out;
+}
+
+#register.close {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: .8s ease-in-out;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0);
+}
+
+.center {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 40px;
+  color: #25a3ff;
+  float: right;
+  cursor: pointer;
+}
+.next:hover {color: #333}
+.wrong .next {color: #ff2d26}
+.close .next {color: #fff}
+
+#inputContainer {
+  position: relative;
+  opacity: 0;
+  margin-top: 25px;
+  transition: opacity .3s ease-in-out;
+}
+
+#inputContainer input {
+  width: 100%;
+  padding: 0 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: 0;
+  background: transparent;
+  box-shadow:none;
+}
+
+#inputLabel {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 5px;
+  transition: .2s ease-in-out;
+}
+
+#inputContainer input:valid + #inputLabel {
+  top: -15px;
+  font-size: 11px;
+  font-weight: normal;
+  color: #9e9e9e;
+}
+
+#inputProgress {
+  position: absolute;
+  border-bottom: 2px solid #25a3ff;
+  padding: 3px 0;
+  width: 0;
+  transition: width .6s ease-in-out;
+}
+
+.wrong #inputProgress {
+  border-color: #ff2d26;
+}
+
+.ParallaxVideo{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
