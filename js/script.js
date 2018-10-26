@@ -50,7 +50,7 @@ var questions = [
     
     // add the h1 at the end with the welcome text
     var h1 = document.createElement('p')
-    h1.appendChild(document.createTextNode('Hey ' + questions[0].value + '!' + ' (btw this does nothing rn)'))
+    h1.appendChild(document.createTextNode('Hey ' + questions[0].value + '!' + ' (btw this does nothing right now)'))
     setTimeout(function() {
       register.parentElement.appendChild(h1)     
       setTimeout(function() {h1.style.opacity = 1}, 50)
@@ -73,17 +73,6 @@ var questions = [
     else {
       ok(function() {
 
-
-
-        //sends email to server
-        var xhr = new XMLHttpRequest();
-        // add your url as second parameter
-        xhr.open("POST", 'http://localhost:3000', true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send(JSON.stringify({
-            value: questions[0].value
-        }));
-      
       // set the progress of the background
       progress.style.width = ++position * 100 / questions.length + 'vw'
 
